@@ -28,7 +28,7 @@ class RandomWalk:
             y_step = y_direction*y_distance
 
             # reject moves that nowhere
-            if x_step == s0 and y_step == 0:
+            if x_step == 0 and y_step == 0:
                 continue
 
             # calculate the new position
