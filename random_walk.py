@@ -21,19 +21,19 @@ class RandomWalk:
             # decide the direction to go and how far to go in that direction
             x_direction = choice([1, -1])
             x_distance = choice([0, 1, 2, 3, 4, 5])
-            x_step = x_direction*x_distance
+            x_step = x_direction * x_distance
 
             y_direction = choice([1, -1])
             y_distance = choice([0, 1, 2, 3, 4, 5])
-            y_step = y_direction*y_distance
+            y_step = y_direction * y_distance
 
             # reject moves that nowhere
             if x_step == 0 and y_step == 0:
                 continue
 
             # calculate the new position
-            x = self.x_values[-1]+x_step
-            y = self.y_values[-1]+y_step
+            x = self.x_values[-1] + x_step
+            y = self.y_values[-1] + y_step
 
             self.x_values.append(x)
             self.y_values.append(y)
